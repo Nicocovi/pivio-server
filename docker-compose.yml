@@ -8,3 +8,19 @@ pivio:
 elasticsearch:
   image: elasticsearch:2.4.6
   command: ["/bin/sh", "-c", "if ! plugin list | grep -q delete-by-query; then plugin install delete-by-query; fi && gosu elasticsearch elasticsearch"]
+  ports:
+   - "9200:9200"
+   
+kibana:
+  image: kibana:4.6
+  links:
+   - elasticsearch
+  ports:
+   - "5601:5601"  
+
+jenkins:
+  image: jenkins/jenkins:lts
+  ports:
+   - "8008:8080"
+   
+

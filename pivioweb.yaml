@@ -1,0 +1,5 @@
+FROM java:8
+WORKDIR C:\Pivio\pivio-web-forked\pivio-web\build\libs
+ADD view.jar pivioweb.jar
+EXPOSE 8080
+CMD java - jar pivioweb.jar
