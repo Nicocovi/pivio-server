@@ -1,16 +1,1 @@
-*.class
-target/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-.gradle/
-.idea/
-build/
-*.iml
-
-data/
-
-.DS_Store
+*
