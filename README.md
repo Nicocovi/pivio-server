@@ -6,7 +6,7 @@
 
 [![Build Status](https://travis-ci.org/pivio/pivio-server.svg?branch=master)](https://travis-ci.org/pivio/pivio-server)
 
-
+<!--
 ## How to run the server (without using Docker)
 
 1. Build pivio-server: `./gradlew build -x test` (Note: If you want to run the tests, you need [Docker](https://docs.docker.com/engine/installation/))
@@ -16,6 +16,7 @@
 4. Start pivio-server: `java -jar build/libs/pivio-server-1.1.0.jar`
 5. Access it at `http://localhost:9123/{document|changeset}` (see below)
 
+-->
 ## How to run the server using Docker (Compose)
 
 1. Make sure [Docker](https://docs.docker.com/engine/installation/) is running and you have [Docker Compose](https://docs.docker.com/compose/install/) installed
